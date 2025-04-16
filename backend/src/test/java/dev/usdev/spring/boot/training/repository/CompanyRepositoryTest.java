@@ -22,8 +22,6 @@ class CompanyRepositoryTest {
     @Test
     public void saveCompany() {
 
-        truncateTableCompanyNative();
-
         Company company = new Company().builder()
                 .companyName("Company1")
                 .companyPhoneNumber("1234567890")

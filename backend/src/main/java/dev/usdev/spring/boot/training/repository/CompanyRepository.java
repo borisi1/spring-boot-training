@@ -12,7 +12,7 @@ public interface CompanyRepository extends JpaRepository<Company, Long> {
 
     @Modifying
     @Query(
-            value = "TRUNCATE TABLE TBL_COMPANY",
+            value = "TRUNCATE TABLE APP.TBL_COMPANY",
             nativeQuery = true
     )
     @Transactional

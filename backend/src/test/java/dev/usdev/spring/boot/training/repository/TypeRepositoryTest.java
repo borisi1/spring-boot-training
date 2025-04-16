@@ -10,7 +10,6 @@ import org.springframework.test.context.ActiveProfiles;
 
 @ActiveProfiles("test")
 @SpringBootTest
-// @DataJpaTest
 class TypeRepositoryTest {
 
     @Autowired
@@ -23,8 +22,6 @@ class TypeRepositoryTest {
 
     @Test
     public void saveType() {
-
-        truncateTableTypeNative();
 
         Type type = new Type().builder()
                 .type(TypeEnum.DEBIT)

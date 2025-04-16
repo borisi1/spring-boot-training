@@ -12,7 +12,7 @@ public interface TypeRepository extends JpaRepository<Type, Long> {
 
     @Modifying
     @Query(
-            value = "TRUNCATE TABLE TBL_TYPE",
+            value = "TRUNCATE TABLE APP.TBL_TYPE",
             nativeQuery = true
     )
     @Transactional

@@ -23,7 +23,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table(name = "tbl_type")
+@Table(name = "tbl_type", schema = "APP")
 public class Type {
 
     @Id

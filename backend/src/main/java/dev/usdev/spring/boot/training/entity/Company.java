@@ -21,7 +21,8 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 @Table(
-        name = "tbl_company"
+        name = "tbl_company",
+        schema = "APP"
 )
 public class Company {
 
