@@ -12,7 +12,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
     public User findByUserName(String userName);
     @Modifying
     @Query(
-            value = "TRUNCATE TABLE APP.TBL_USER",
+            value = "TRUNCATE TABLE TBL_USER",
             nativeQuery = true
     )
     @Transactional
