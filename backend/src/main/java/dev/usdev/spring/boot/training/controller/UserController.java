@@ -13,9 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author borisi
- */
 @RestController
 @RequestMapping("/api/user")
 public class UserController {
@@ -24,10 +21,10 @@ public class UserController {
     UserRepository userRepository;
 
     @GetMapping
-    public ResponseEntity<List<User>> getUsers(@RequestParam(required = false) String username) {
+    public ResponseEntity<List<User>> getUsers(@RequestParam(required = false) String userName) {
         List<User> users = new ArrayList<>();
 
-        if (username != null) users.add(userRepository.findByUserName(username));
+        if (userName != null) users.add(userRepository.findByUserName(userName));
         else users = userRepository.findAll();
 
         return new ResponseEntity<>(users, HttpStatus.OK);

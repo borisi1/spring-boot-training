@@ -8,10 +8,6 @@ import org.springframework.context.annotation.Profile;
 
 import java.sql.SQLException;
 
-/**
- * @author borisi
- */
-
 @Configuration
 @Profile({"dev", "prod"})
 public class H2Config {

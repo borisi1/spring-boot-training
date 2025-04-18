@@ -14,10 +14,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * @author borisi
- */
-
 @Entity
 @Data
 @AllArgsConstructor
