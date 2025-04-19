@@ -18,4 +18,6 @@ public interface CompanyRepository extends JpaRepository<Company, Long> {
     @Transactional
     public void truncateTableCompanyNative();
 
+    public Company getCompaniesByCompanyName(String companyName);
+
 }
